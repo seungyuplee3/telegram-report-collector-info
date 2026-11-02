@@ -1,0 +1,11 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>개인정보처리방침 — Telegram Report Collector</title>
+<style>body{max-width:760px;margin:64px auto;padding:0 24px;font:17px/1.8 system-ui;color:#203044}a{color:#1659ae}h1{line-height:1.3}</style>
+<h1>개인정보처리방침</h1><p>기준일: 2026-11-02</p>
+<p>Telegram Report Collector는 운영자 본인의 자료 보관을 위한 개인용 도구입니다. Google Drive에서 관심종목 설정 JSON, 지정된 리포트 폴더의 파일 정보와 중복 확인용 해시를 읽고 새 PDF를 검수 대기 폴더에 저장합니다. 저장 결과 확인을 위해 생성한 PDF를 다시 읽을 수 있습니다.</p>
+<p>수집 대상 PDF와 채널·메시지·첨부 식별자, 파일명, 게시 시각, 제한된 캡션, 처리 상태, 내용 해시 및 Drive 파일 식별자를 처리합니다. PDF는 본인의 Drive에 보관합니다. 처리 이력과 중복 확인 정보는 운영자의 Google Cloud Firestore에 저장합니다. PDF 처리 중 생성한 임시 파일은 해당 처리 종료 시 제거합니다.</p>
+<p>Drive 인증 토큰은 운영자가 관리하는 비공개 Google Cloud Secret Manager와 인증 준비용 비공개 로컬 파일에 보관합니다. 별도의 배포 인증은 로컬에 보관하며 PDF 실행 계정에 전달하지 않습니다. 토큰·인증 코드·PDF 원문을 공개 저장소나 공개 안내 페이지에 올리지 않습니다.</p>
+<p>운영자가 사용하는 Google Cloud 및 Telegram 서비스를 통한 기능 수행 외에 광고, 판매, 공개 재배포 또는 범용 AI 모델 학습을 위해 Google 사용자 데이터를 제공하지 않습니다. 수집 프로그램 자체는 외부 AI 분석 서비스를 호출하지 않습니다. 사용자가 별도로 수행하는 분석·공유는 해당 도구와 사용자 설정을 따릅니다.</p>
+<p>Google API로 받은 정보의 사용과 다른 앱으로의 이전은 제한적 사용 요건을 포함한 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 서비스 사용자 데이터 정책</a>을 준수합니다.</p>
+<p>운영자는 Google 계정의 연결된 앱 관리에서 접근을 철회하고 수집 예약을 중지할 수 있습니다. 접근 철회만으로 이미 저장된 PDF나 처리 이력이 삭제되지는 않습니다. 보관 파일·처리 이력·인증 비밀의 삭제와 문의는 앱 동의 화면의 지원 연락처를 통해 운영자에게 요청할 수 있습니다. 자동 보관 기간이나 자동 삭제 기능은 현재 제공하지 않습니다.</p>
+<p>처리 방식이 바뀌면 이 문서를 갱신합니다. <a href="index.html">앱 소개로 돌아가기</a></p></html>
